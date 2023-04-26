@@ -1,0 +1,45 @@
+.main {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.main__itens {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    background-color: var(--background-card);
+}
+
+.itens__vencimento__titulo,
+.itens__vencimento__descricao {
+    color: var(--cor-card);
+}
+
+.main__itens__vencimento {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.itens__vencimento__titulo {
+    font-size: 1rem;
+}
+
+.itens__vencimento__descricao {
+    font-size: .85rem;
+    line-height: 1.2rem;
+}
+
+.itens__vencimento__ver-mais {
+    width: fit-content;
+    font-size: .7rem;
+    padding: 0.5rem 1rem;
+}
+
+.main__itens__ilustracao {
+    width: 40%;
+}

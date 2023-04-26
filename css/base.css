@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-borda-input: #f0f0f0;
+    --cor-botao-primario: #ffffff;
+    --cor-botao-secundario: ##6D6D6D;
+    --cor-menu-link: #ffffff;
+    --cor-card: #ffffff;
+    --cor-titulo: #242424;
+    --cor-input: #d2d2d2;
+    --background-card: #ff6801;
+    --background-botao-primario: #ff6801;
+    --background-menu-link: #ff6801;
+    --background-botao-secundario: #FFFFFF;
+    --box-shadow-botao-secundario: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    --borda-divisao: #d2d2d2;
+    --fonte-family-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: var(--fonte-family-montserrat);
+}
+
+h1,
+h3 {
+    color: var(--cor-titulo);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+}
+
+fieldset {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.label {
+    padding-left: .5rem;
+}
+
+.label,
+.input,
+.input::placeholder {
+    font-size: .8rem;
+}
+
+.input {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    border: var(--cor-borda-input) 1px solid;
+}
+
+.input,
+.input::placeholder {
+    color: var(--cor-input);
+    font-family: var(--fonte-family-montserrat)
+}
+
+.botao {
+    padding: .65rem 2rem;
+    font-family: var(--fonte-family-montserrat);
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3rem;
+}
+
+.botao--primario {
+    background-color: var(--background-botao-primario);
+    color: var(--cor-botao-primario);
+}
+
+.botao--secundario {
+    background-color: var(--background-botao-secundario);
+    color: var(--cor-botao-secundario);
+    box-shadow: var(--box-shadow-botao-secundario);
+}
+
+.botao--icone {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.botao--pequeno {
+    padding: .55rem 1rem;
+    font-size: .95rem;
+}
