@@ -131,6 +131,20 @@ body .main--tela {
     font-family: var(--fonte-family-montserrat);
 }
 
+.input:read-only {
+    padding: 0.5rem;
+    padding-top: 0;
+    border-radius: 0;
+    border: none;
+    color: #242424;
+    border-bottom: 1px solid var(--cor-borda-input);
+}
+
+.input:read-only:focus-visible {
+    outline: none;
+    border-bottom: 1px solid var(--borda-select);
+}
+
 .botao {
     padding: 0.65rem 2rem;
     font-family: var(--fonte-family-montserrat);

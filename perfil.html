@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/perfil.css">
+
+  <title>Fresh List</title>
+
+</head>
+
+<body>
+  <main class="main main--tela">
+    <nav class="menu__superior">
+      <header class="menu__superior__header">
+        <a href="./home.html" class="superior__header__link">
+          <img src="./images/icones/seta-esquerda.png" alt="" class="header__link__image">
+        </a>
+
+        <h2 class="superior__header__titulo">Perfil</h2>
+
+        <a href="javascript:void(0)" class="superior__header__link editar">
+          <img src="./images/icones/editar.png" alt="" class="header__link__image">
+        </a>
+      </header>
+    </nav>
+
+    <section class="main__perfil">
+      <img src="./images/logo-provisorio.png" alt="" class="main__perfil__logo">
+
+      <form action="" class="main__perfil__dados">
+        <fieldset class="perfil__dados__fieldset">
+          <label for="" class="dados__fieldset__label label">Nome: </label>
+          <input type="text" name="" id="" class="dados__fieldset__input input"
+            placeholder="Ex.: jorge.agusto@email.com" value="Shirley da Costa Conceição Silva" readonly>
+
+          <label for="" class="dados__fieldset__label label">Email: </label>
+          <input type="text" name="" id="" class="dados__fieldset__input input"
+            placeholder="Ex.: jorge.agusto@email.com" value="shirley.costa@email.com" readonly>
+
+          <label for="" class="dados__fieldset__label label">Data de Nascimento: </label>
+          <input type="text" name="" id="" class="dados__fieldset__input input" value="14/05/2001" readonly
+            placeholder="DD/MM/AAAA">
+        </fieldset>
+
+        <fieldset class="dados__fieldset__acoes">
+          <button class="dados__fieldset__botao-dados botao botao--primario">Sair</button>
+        </fieldset>
+
+      </form>
+    </section>
+
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li class="menu__lista__item">
+          <a href="./home.html" class="lista__item__link"><img src="./images/icones/menu-home.png"
+              class="item__link__image" alt=""></a>
+        </li>
+        <li class="menu__lista__item">
+          <a href="./receitas.html" class="lista__item__link"><img src="./images/icones/menu-receitas.png"
+              class="item__link__image" alt=""></a>
+        </li>
+        <li class="menu__lista__item">
+          <a href="./relatorio.html" class="lista__item__link"><img src="./images/icones/menu-relatorio.png"
+              class="item__link__image" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+
+</body>
+
+<script>
+  let isEditar = false;
+
+  document.querySelectorAll('.editar')[0].addEventListener('click', () => {
+    const listaCampoPerfil = document.querySelectorAll('.dados__fieldset__input');
+    isEditar = !isEditar;
+
+    listaCampoPerfil.forEach((campo) => {
+      isEditar ? campo.removeAttribute('readonly') : campo.setAttribute('readonly', true);
+    });
+
+    listaCampoPerfil[0].focus();
+    document.querySelectorAll('.dados__fieldset__botao-dados')[0].textContent = isEditar ? 'Salvar' : 'Sair';
+  });
+
+  document.querySelectorAll('.dados__fieldset__botao-dados')[0].addEventListener('click', (event) => {
+    event.preventDefault();
+
+    if (event.target.textContent === 'Salvar') {
+      const listaCampoPerfil = document.querySelectorAll('.dados__fieldset__input');
+      listaCampoPerfil.forEach((campo) => campo.setAttribute('readonly', true));
+      event.target.textContent = 'Sair';
+      return;
+    }
+
+    window.location.replace('./login.html');
+  });
+</script>
+
+</html>
