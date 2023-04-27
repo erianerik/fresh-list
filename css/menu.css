@@ -4,11 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-}
-
-.menu,
-.menu-superior {
-    z-index: 1;
+    z-index: 2;
     background-color: #ffffff;
 }
 
@@ -40,7 +36,7 @@
 }
 
 .menu {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
     border-top: var(--borda-divisao) 1px solid;
@@ -48,6 +44,8 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
+    background-color: #ffffff;
 }
 
 .menu__lista {

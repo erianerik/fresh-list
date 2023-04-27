@@ -24,7 +24,7 @@
 .main__itens__vencimento {
     display: flex;
     flex-direction: column;
-    gap: .8rem;
+    gap: 0.8rem;
 }
 
 .itens__vencimento__titulo {
@@ -32,13 +32,13 @@
 }
 
 .itens__vencimento__descricao {
-    font-size: .85rem;
+    font-size: 0.85rem;
     line-height: 1.2rem;
 }
 
 .itens__vencimento__ver-mais {
     width: fit-content;
-    font-size: .7rem;
+    font-size: 0.7rem;
     padding: 0.5rem 1rem;
 }
 
@@ -89,11 +89,11 @@
 }
 
 .card__conteudo__titulo {
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .card__conteudo__descricao {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .receitas__itens__link {
@@ -102,7 +102,7 @@
     width: 2.5rem;
     height: 2.5rem;
     box-shadow: var(--box-shadow-botao-secundario);
-    border-radius: .4rem;
+    border-radius: 0.4rem;
 }
 
 .itens__link__image {
