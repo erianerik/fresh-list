@@ -13,12 +13,12 @@
     align-items: center;
     gap: 1rem;
     border-radius: 2rem;
-    background-color: var(--background-card);
+    background-color: var(--cor-primaria);
 }
 
 .itens__vencimento__titulo,
 .itens__vencimento__descricao {
-    color: var(--cor-card);
+    color: var(--cor-secundaria);
 }
 
 .main__itens__vencimento {
@@ -46,15 +46,15 @@
     width: 40%;
 }
 
-.main__receitas {
+.main__receitas-home {
     width: 100%;
 }
 
-.main__receitas__titulo {
+.main__receitas-home__titulo {
     font-size: 1rem;
 }
 
-.main__receitas__itens {
+.main__receitas-home__itens {
     max-height: 15rem;
     margin-top: 1.5rem;
     padding: 0.2rem;

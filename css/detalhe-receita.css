@@ -1,11 +1,12 @@
-.main__receita {
+.main__detalhe-receita {
     width: 100%;
     padding: 2rem 1rem;
+    padding-bottom: 0rem;
     display: grid;
     gap: 1rem;
 }
 
-.main__receita__header {
+.main__detalhe-receita .main__receita__header {
     width: 100%;
     display: grid;
     text-align: center;

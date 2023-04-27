@@ -22,8 +22,8 @@
     justify-content: center;
     align-items: center;
     border-radius: .5rem;
-    color: var(--cor-menu-link);
-    background-color: var(--background-menu-link);
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
 }
 
 .header__link__image {
@@ -39,7 +39,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
-    border-top: var(--borda-divisao) 1px solid;
+    border-top: var(--cor-terciaria) 1px solid;
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -60,8 +60,8 @@
     display: grid;
     place-content: center;
     border-radius: 6rem;
-    color: var(--cor-menu-link);
-    background-color: var(--background-menu-link);
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
 }
 
 .item__link__image {

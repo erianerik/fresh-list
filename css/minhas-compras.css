@@ -29,7 +29,7 @@
     padding: 0.3rem 1rem;
     padding-left: 0;
     border: none;
-    border-bottom: 1px solid var(--borda-select);
+    border-bottom: 1px solid var(--cor-primaria);
     font-family: var(--fonte-family-montserrat);
     text-align: left;
     font-weight: bold;
@@ -49,17 +49,17 @@
 }
 
 .minhas-compras__status__card--itens-vencer {
-    color: var(--cor-card-alerta);
+    color: var(--cor-secundaria);
     background-color: var(--background-card-alerta);
 }
 
 .minhas-compras__status__card--itens-consumo {
-    color: var(--cor-card-ok);
+    color: var(--cor-secundaria);
     background-color: var(--background-card-ok);
 }
 
 .minhas-compras__status__card--itens-vencidos {
-    color: var(--cor-card-erro);
+    color: var(--cor-secundaria);
     background-color: var(--background-card-erro);
 }
 
@@ -120,7 +120,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid var(--borda-divisao);
+    border-top: 1px solid var(--cor-terciaria);
 }
 
 .resumo-mes__total__gasto {
@@ -132,9 +132,9 @@
     padding: 0.5rem 1.3rem;
     font-size: 0.95rem;
     font-weight: 500;
-    color: var(--cor-titulo);
+    color: var(--cor-preto-padrao);
     border-radius: 3rem;
-    border: 1px solid var(--borda-total-itens);
+    border: 1px solid var(--cor-terciaria);
 }
 
 .main__minhas-compras__lista {
@@ -153,7 +153,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    border-bottom: 1px solid var(--borda-divisao);
+    border-bottom: 1px solid var(--cor-terciaria);
 }
 
 .minhas-compras__lista__alimentos:first-child {
@@ -175,7 +175,7 @@
 .alimentos__item__quantidade {
     font-size: 1.3rem;
     font-weight: bolder;
-    color: var(--cor-quantidade-alimento);
+    color: var(--cor-primaria);
 }
 
 .item__dados__nome {

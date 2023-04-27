@@ -1,6 +1,7 @@
 .main__receita {
     width: 100%;
     padding: 1rem;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -24,5 +25,5 @@
 .card__conteudo__vencimento {
     font-size: 0.9rem;
     font-weight: bold;
-    color: var(--cor-vencimento-alimento);
+    color: var(--cor-primaria);
 }

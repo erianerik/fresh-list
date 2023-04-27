@@ -77,24 +77,22 @@
 
 <script>
   let isEditar = false;
+  let botaoFormularioPerfil = document.querySelectorAll('.dados__fieldset__botao-dados')[0];
+  const listaCampoPerfil = document.querySelectorAll('.dados__fieldset__input');
 
   document.querySelectorAll('.editar')[0].addEventListener('click', () => {
-    const listaCampoPerfil = document.querySelectorAll('.dados__fieldset__input');
     isEditar = !isEditar;
 
-    listaCampoPerfil.forEach((campo) => {
-      isEditar ? campo.removeAttribute('readonly') : campo.setAttribute('readonly', true);
-    });
-
+    listaCampoPerfil.forEach((campo) => isEditar ? campo.removeAttribute('readonly') : campo.setAttribute('readonly', true));
     listaCampoPerfil[0].focus();
-    document.querySelectorAll('.dados__fieldset__botao-dados')[0].textContent = isEditar ? 'Salvar' : 'Sair';
+
+    botaoFormularioPerfil.textContent = isEditar ? 'Salvar' : 'Sair';
   });
 
-  document.querySelectorAll('.dados__fieldset__botao-dados')[0].addEventListener('click', (event) => {
+  botaoFormularioPerfil.addEventListener('click', (event) => {
     event.preventDefault();
 
     if (event.target.textContent === 'Salvar') {
-      const listaCampoPerfil = document.querySelectorAll('.dados__fieldset__input');
       listaCampoPerfil.forEach((campo) => campo.setAttribute('readonly', true));
       event.target.textContent = 'Sair';
       return;

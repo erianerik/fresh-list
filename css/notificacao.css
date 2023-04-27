@@ -25,13 +25,13 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 0.5rem;
-    box-shadow: var(--box-notificacao);
-    background-color: var(--background-item-notificacao);
+    box-shadow: var(--box-shadow-padrao);
+    background-color: var(--cor-secundaria);
 }
 
 .notificacao__conteudo__item--selecionado {
-    color: var(--cor-item-notificao--selecionado);
-    background-color: var(--background-item-notificacao--selecionado);
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
 }
 
 .conteudo__item__container {

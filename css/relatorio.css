@@ -12,8 +12,8 @@
     width: 100%;
     padding: 1rem;
     line-height: 1.5rem;
-    color: var(--cord-card-relatorio);
-    background-color: var(--background-card-relatorio);
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
     border-radius: 0.3rem;
 }
 
@@ -37,7 +37,7 @@
     border-radius: 5rem;
     font-size: 0.85rem;
     font-weight: 500;
-    background-color: var(--background-botao-secundario);
+    background-color: var(--cor-secundaria);
     color: var(--cor-botao-secundario);
-    box-shadow: var(--box-shadow-botao-secundario);
+    box-shadow: var(--box-shadow-padrao);
 }
