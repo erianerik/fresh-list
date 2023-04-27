@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 :root {
     --cor-borda-input: #f0f0f0;
@@ -13,18 +13,29 @@
     --cor-section: #ffffff;
     --cor-item-notificao--selecionado: #ffffff;
     --cor-vencimento-alimento: #ff6801;
+    --cor-quantidade-alimento: #ff6801;
+    --cor-card-alerta: #ffffff;
+    --cor-card-ok: #ffffff;
+    --cor-card-erro: #ffffff;
+    --background-card-alerta: #ffb603;
+    --background-card-ok: #73b437;
+    --background-card-erro: #d96f78;
     --background-card-secundario: #ffffff;
     --background-card: #ff6801;
     --background-botao-primario: #ff6801;
     --background-menu-link: #ff6801;
     --background-section: #ff6801;
+    --background-select-input: #ff6801;
     --background-ingrediente-item: #f5f5f5;
     --background-botao-secundario: #ffffff;
     --background-item-notificacao--selecionado: #ff6801;
     --background-item-notificacao: #ffffff;
     --box-shadow-botao-secundario: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     --box-notificacao: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    --box-card: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     --borda-divisao: #d2d2d2;
+    --borda-total-itens: #d2d2d2;
+    --borda-select: #ff6801;
     --fonte-family-montserrat: "Montserrat", sans-serif;
 }
 
@@ -44,6 +55,13 @@ body {
 
 h1 {
     color: var(--cor-titulo);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: inherit;
 }
 
 a {
@@ -84,6 +102,7 @@ ul {
 }
 
 body .main--tela {
+    padding: 1rem;
     padding-top: 4.375rem;
     padding-bottom: 4.688rem;
 }

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/minhas-compras.css">
+
+  <title>Fresh List</title>
+
+</head>
+
+<body>
+  <main class="main main--tela">
+
+    <nav class="menu__superior">
+      <header class="menu__superior__header">
+        <a href="./home.html" class="superior__header__link">
+          <img src="./images/icones/seta-esquerda.png" alt="" class="header__link__image">
+        </a>
+
+        <h1 class="superior__header__titulo">Fresh List</h1>
+
+        <a href="./notificacao.html" class="superior__header__link">
+          <img src="./images/icones/menu-superior-sino.png" alt="" class="header__link__image">
+        </a>
+      </header>
+    </nav>
+
+    <section class="main__minhas-compras">
+      <header class="main__minhas-compras__cabecalho">
+        <h2 class="minhas-compras__cabecalho__titulo">Compras</h2>
+        <select name="" id="" class="minhas-compras__cabecalho__mes">
+          <option class="cabecalho__mes__selecionado" value="" selected>Maio</option>
+          <option class="cabecalho__mes__selecionado" value="">Abril</option>
+          <option class="cabecalho__mes__selecionado" value="">Março</option>
+          <option class="cabecalho__mes__selecionado" value="">Fevereiro</option>
+          <option class="cabecalho__mes__selecionado" value="">Janeiro</option>
+        </select>
+      </header>
+
+      <div class="main__minhas-compras__status">
+        <div class="minhas-compras__status__card minhas-compras__status__card--itens-vencer">
+          <h3 class="status__card__titulo ">Itens a vencer</h3>
+          <p class="status__card__quantidade-item">3</p>
+        </div>
+
+        <div class="minhas-compras__status__card minhas-compras__status__card--itens-consumo">
+          <h3 class="status__card__titulo">Itens para consumo</h3>
+          <p class="status__card__quantidade-item">20</p>
+        </div>
+
+        <div class="minhas-compras__status__card minhas-compras__status__card--itens-vencidos">
+          <h3 class="status__card__titulo">Itens vencidos</h3>
+          <p class="status__card__quantidade-item">2</p>
+        </div>
+      </div>
+
+      <div class="main__minhas-compras__resumo-mes">
+        <div class="minhas-compras__resumo-mes__container">
+          <img src="./images/ilustracao/ilustracao-compras.png" class="resumo-mes__container__ilustracao" alt="">
+
+
+          <div class="resumo-mes__container__informacoes">
+            <p class="container__informacoes__descricao">Total da compra do mês</p>
+            <h3 class="container__informacoes__mes">Maio</h3>
+          </div>
+        </div>
+
+        <div class="minhas-compras__resumo-mes__total">
+          <h3 class="resumo-mes__total__gasto">R$ 300,00</h3>
+
+          <span class="total__informacoes__itens">30 itens</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="main__minhas-compras__lista">
+        <h3 class="minhas-compras__lista__titulo">Itens</h3>
+
+        <div class="minhas-compras__lista__alimentos">
+          <div class="lista__alimentos__item">
+            <p class="alimentos__item__quantidade">3</p>
+
+            <div class="alimentos__item__dados">
+              <h4 class="item__dados__nome">Arroz 5KG</h4>
+              <p class="item__dados__data-vencimento">Venc: 06/05/2023</p>
+            </div>
+          </div>
+
+          <h5 class="alimentos__item__valor">R$ 22,00</h5>
+        </div>
+
+        <div class="minhas-compras__lista__alimentos">
+          <div class="lista__alimentos__item">
+            <p class="alimentos__item__quantidade">2</p>
+
+            <div class="alimentos__item__dados">
+              <h4 class="item__dados__nome">Oléo 900 ML</h4>
+              <p class="item__dados__data-vencimento">Venc: 05/08/2023</p>
+            </div>
+          </div>
+
+          <h5 class="alimentos__item__valor">R$ 14,00</h5>
+        </div>
+
+        <div class="minhas-compras__lista__alimentos">
+          <div class="lista__alimentos__item">
+            <p class="alimentos__item__quantidade">5</p>
+
+            <div class="alimentos__item__dados">
+              <h4 class="item__dados__nome">Macarrão</h4>
+              <p class="item__dados__data-vencimento">Venc: 14/05/2023</p>
+            </div>
+          </div>
+
+          <h5 class="alimentos__item__valor">R$ 12,00</h5>
+        </div>
+
+        <div class="minhas-compras__lista__alimentos">
+          <div class="lista__alimentos__item">
+            <p class="alimentos__item__quantidade">3</p>
+
+            <div class="alimentos__item__dados">
+              <h4 class="item__dados__nome">Molho de tomate</h4>
+              <p class="item__dados__data-vencimento">Venc: 23/01/2023</p>
+            </div>
+          </div>
+
+          <h5 class="alimentos__item__valor">R$ 4,90</h5>
+        </div>
+      </div>
+
+    </section>
+
+    <nav class="menu">
+      <ul class="menu__lista">
+        <li class="menu__lista__item">
+          <a href="./home.html" class="lista__item__link"><img src="./images/icones/menu-home.png"
+              class="item__link__image" alt=""></a>
+        </li>
+        <li class="menu__lista__item">
+          <a href="./receitas.html" class="lista__item__link"><img src="./images/icones/menu-receitas.png"
+              class="item__link__image" alt=""></a>
+        </li>
+        <li class="menu__lista__item">
+          <a href="" class="lista__item__link"><img src="./images/icones/menu-relatorio.png" class="item__link__image"
+              alt=""></a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+
+</body>
+
+</html>
