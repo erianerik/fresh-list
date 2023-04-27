@@ -6,6 +6,12 @@
     left: 0;
 }
 
+.menu,
+.menu-superior {
+    z-index: 1;
+    background-color: #ffffff;
+}
+
 .menu__superior__header {
     width: 100%;
     display: flex;

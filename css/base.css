@@ -6,8 +6,10 @@
     --cor-botao-secundario: ##6D6D6D;
     --cor-menu-link: #ffffff;
     --cor-card: #ffffff;
+    --cor-card-secundario: #242424;
     --cor-titulo: #242424;
     --cor-input: #d2d2d2;
+    --background-card-secundario: #ffffff;
     --background-card: #ff6801;
     --background-botao-primario: #ff6801;
     --background-menu-link: #ff6801;
@@ -73,6 +75,11 @@ ul {
     display: flex;
 }
 
+body .main--tela {
+    padding-top: 4.375rem;
+    padding-bottom: 4.688rem;
+}
+
 .label {
     padding-left: .5rem;
 }
@@ -118,9 +125,4 @@ ul {
 .botao--icone {
     width: 1.3rem;
     height: 1.3rem;
-}
-
-.botao--pequeno {
-    padding: .55rem 1rem;
-    font-size: .95rem;
 }
