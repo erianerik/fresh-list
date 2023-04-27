@@ -11,6 +11,7 @@
     --cor-titulo: #242424;
     --cor-input: #d2d2d2;
     --cor-section: #ffffff;
+    --cor-item-notificao--selecionado: #ffffff;
     --cor-vencimento-alimento: #ff6801;
     --background-card-secundario: #ffffff;
     --background-card: #ff6801;
@@ -19,7 +20,10 @@
     --background-section: #ff6801;
     --background-ingrediente-item: #f5f5f5;
     --background-botao-secundario: #ffffff;
+    --background-item-notificacao--selecionado: #ff6801;
+    --background-item-notificacao: #ffffff;
     --box-shadow-botao-secundario: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    --box-notificacao: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     --borda-divisao: #d2d2d2;
     --fonte-family-montserrat: "Montserrat", sans-serif;
 }
@@ -38,8 +42,7 @@ body {
     font-family: var(--fonte-family-montserrat);
 }
 
-h1,
-h3 {
+h1 {
     color: var(--cor-titulo);
 }
 
@@ -172,4 +175,4 @@ body .main--tela {
 
 .card__link__image {
     width: 55%;
-} 
+}
